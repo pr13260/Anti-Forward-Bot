@@ -53,7 +53,7 @@ def check_message(client, message):
                                message_ids=message.message_id)
         client.send_message(chat_id=message.chat.id,
                             text="[" + usrfname + "](tg://user?id=" +
-                            str(usrid) + ") :\n" + "你刚才所转发的消息来源频道在本群不受允许。",
+                            str(usrid) + ") :\n" + "The source channel you just reposted is not allowed 。",
                             parse_mode='markdown')
     else:
         print(message)
